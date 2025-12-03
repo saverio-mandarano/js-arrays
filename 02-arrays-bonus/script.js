@@ -10,7 +10,11 @@ const teachers = [
 
 // 1. Inverti l'ordine degli insegnanti nell'array teachers
 // e salva il risultato nella variabile reversedTeachers
-const reversedTeachers = null;
+const reversedTeachers = teachers.reverse();
+for (let i=0; i<teachers.length; i++){
+
+  console.log("Array invertito: " + reversedTeachers[i]);
+}
 
 // 2. Crea un nuovo array chiamato 'longNames' che contenga solo gli insegnanti
 // con un nome di lunghezza maggiore o uguale a 5 caratteri
