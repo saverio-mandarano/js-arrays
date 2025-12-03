@@ -19,12 +19,13 @@ console.log("Il quinto insegnante è: " + teachers[4]);
 
 
 // 3. Rimuovi l'ultimo insegnante dall'array e salvalo nella variabile lastTeacher qui sotto
-const lastTeacher=teachers.splice(teachers.length - 1, 1);
+const lastTeacher=teachers.splice(teachers.length - 1, 1)[0];
 console.log("L'ultimo insegnante è: " + lastTeacher);
 
-for (let i=0; i<teachers.length; i++){
-  console.log(teachers[i]);
-}
+//  for (let i=0; i<teachers.length; i++){
+//   console.log(teachers[i]);
+//  }
+
 
 // 4. Rimuovi il primo insegnante dall'array e salvalo nella variabile firstTeacher qui sotto
 const firstTeacher = null;
