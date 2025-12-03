@@ -35,13 +35,17 @@ console.log("Il primo insegnante è: " + firstTeacher);
 teachers.splice(teachers.length, 0, "Vanessa");
 console.log("Ultimo insegnante aggiunto è: " + teachers[teachers.length - 1]);
 
+// Alternativa con push
+teachers.push(`Vanessa-2`);
+console.log(`Add insegnante ala fine con metodo2: ${teachers[teachers.length - 1]}`);
+
 // 6. Aggiungi un insegnante di nome 'Sarah' all'inizio dell'array teachers
 teachers.splice(0, 0, "Sarah");
 console.log("Il primo insegnante aggiunto è: " + teachers[0]);
 
 // Alternativa con unshift
 teachers.unshift(`Sarah-2`);
-console.log(`Insegnante aggiunto all'inizio con metodo2: ${teachers[0]}`)
+console.log(`Insegnante aggiunto all'inizio con metodo2: ${teachers[0]}`);
 
 
 // 7. Trova l'indice dell'insegnante 'Lewis' nell'array teachers
