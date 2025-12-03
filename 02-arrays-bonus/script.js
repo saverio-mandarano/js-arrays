@@ -8,11 +8,12 @@ const teachers = [
   'Luca'
 ]; // NON MODIFICARE QUESTA VARIABILE
 
+let i=0;
 
 // 1. Inverti l'ordine degli insegnanti nell'array teachers
 // e salva il risultato nella variabile reversedTeachers
 const reversedTeachers = teachers.slice().reverse();
-for (let i=0; i<teachers.length; i++){
+for ( i=0; i<teachers.length; i++){
   console.log("Array invertito: " + reversedTeachers[i]);
 }
 
@@ -34,13 +35,15 @@ else {
 }
 
 console.log("Array dopo la rimozione di Ed: ");
-for (let i=0; i<teachers.length; i++){
+for (i=0; i<teachers.length; i++){
   console.log("Array indice: " + i + " valore: " + teachers[i]);
 }
 
 // 4. Verifica se 'Fabio' è presente nell'array teachers
 // e salva il risultato nella variabile isFabioPresent
-const isFabioPresent = null;
+const isFabioPresent = teachers.indexOf('Fabio') !== -1;
+console.log(`Fabio è presente ? : ${isFabioPresent} `);
+
 
 // 5. Unisci tutti gli insegnanti nell'array teachers in una stringa  separata da virgole e salvala nella variabile teachersString
 const teachersString = null;
