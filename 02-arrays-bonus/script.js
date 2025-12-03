@@ -30,7 +30,7 @@ for ( i=teachers.length - 1; i>=0; i--){
   reversedTeachersAlternative.push(teachers[i]);
 }
 
-console.log(`Array invertito:`)
+console.log(`Array invertito sfruttando push():`)
 for ( i=0; i < reversedTeachersAlternative.length; i++){
   console.log(reversedTeachersAlternative[i]);
 }
@@ -42,7 +42,11 @@ for (let i = 0; i < teachers.length; i++) {
   reversedTeachersAlternative2.unshift(teachers[i]);
 }
 
-console.log(reversedTeachersAlternative2);
+console.log(`array invertito con unshift():`);
+for ( i=0; i < reversedTeachersAlternative2.length; i++){
+  console.log(reversedTeachersAlternative2[i]);
+}
+
 
 // 2. Crea un nuovo array chiamato 'longNames' che contenga solo gli insegnanti
 // con un nome di lunghezza maggiore o uguale a 5 caratteri
@@ -69,7 +73,7 @@ for ( i=0; i<longNamesAlternative.length; i++){
 
 
 // 3. Rimuovi 'Ed' dall'array teachers
-// const indexOfEd = teachers.indexOf(`Ed`)
+const indexOfEd = teachers.indexOf(`Ed`)
 
 if (indexOfEd !== -1) {      //check - Ed esiste ?    
   console.log(`Indice di Ed: ${indexOfEd}`);
