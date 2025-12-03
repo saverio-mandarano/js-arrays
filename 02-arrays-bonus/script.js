@@ -35,6 +35,14 @@ for ( i=0; i < reversedTeachersAlternative.length; i++){
   console.log(reversedTeachersAlternative[i]);
 }
 
+// Terza alternativa sfruttando unshift anzichè push
+const reversedTeachersAlternative2 = [];
+
+for (let i = 0; i < teachers.length; i++) {
+  reversedTeachersAlternative2.unshift(teachers[i]);
+}
+
+console.log(reversedTeachersAlternative2);
 
 // 2. Crea un nuovo array chiamato 'longNames' che contenga solo gli insegnanti
 // con un nome di lunghezza maggiore o uguale a 5 caratteri
