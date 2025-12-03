@@ -81,6 +81,17 @@ else {
 const isFabioPresent = teachers.indexOf('Fabio') !== -1;
 console.log(`Fabio è presente ? : ${isFabioPresent} `);
 
+// Alternativa con ciclo For, senza usare indexOf
+let isFabioPresentAlternative = false;
+
+for (i=0; i<teachers.length; i++){
+  if (teachers[i] === `Fabio`){
+    isFabioPresentAlternative = true;
+    i = teachers.length; //end loop
+  }
+}
+
+console.log(`Fabio è presente ? : ${isFabioPresentAlternative} `);
 
 // 5. Unisci tutti gli insegnanti nell'array teachers in una stringa  separata da virgole
 //e salvala nella variabile teachersString
