@@ -20,10 +20,29 @@ console.log("Il quarto insegnante è: " + fourthTeacher);
 teachers.splice(4, 1, 'Patrick');
 console.log("Il quinto insegnante è: " + teachers[4]);
 
+console.log(`array corrente:`);
+for (i=0; i<teachers.length; i++){
+   console.log(`indice: ${i}, valore: ${teachers[i]}`);
+}
+
 
 // 3. Rimuovi l'ultimo insegnante dall'array e salvalo nella variabile lastTeacher qui sotto
 const lastTeacher=teachers.splice(teachers.length - 1, 1)[0];
 console.log("L'ultimo insegnante è: " + lastTeacher);
+
+console.log(`array dopo rimozione ultimo insegnante:`);
+for (i=0; i<teachers.length; i++){
+   console.log(`indice: ${i}, valore: ${teachers[i]}`);
+}
+
+// Alternativa con pop
+const lastTeacher2 = teachers.pop();
+console.log("L'ultimo insegnante è: " + lastTeacher2);
+
+console.log(`array dopo ulteriore rimozione ultimo insegnante:`);
+for (i=0; i<teachers.length; i++){
+   console.log(`indice: ${i}, valore: ${teachers[i]}`);
+}
 
 
 // 4. Rimuovi il primo insegnante dall'array e salvalo nella variabile firstTeacher qui sotto
