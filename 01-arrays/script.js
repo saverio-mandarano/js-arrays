@@ -20,11 +20,19 @@ console.log("Il quarto insegnante è: " + fourthTeacher);
 teachers.splice(4, 1, 'Patrick');
 console.log("Il quinto insegnante è: " + teachers[4]);
 
-console.log(`array corrente:`);
+console.log(`array dopo aggiunta Patrick:`);
 for (i=0; i<teachers.length; i++){
    console.log(`indice: ${i}, valore: ${teachers[i]}`);
 }
 
+// Alternativa diretta
+teachers[4] = `Patrick-2`;
+console.log("Il quinto insegnante è: " + teachers[4]);
+
+console.log(`array dopo sostituzione Patrick con Patrick-2:`);
+for (i=0; i<teachers.length; i++){
+   console.log(`indice: ${i}, valore: ${teachers[i]}`);
+}
 
 // 3. Rimuovi l'ultimo insegnante dall'array e salvalo nella variabile lastTeacher qui sotto
 const lastTeacher=teachers.splice(teachers.length - 1, 1)[0];
