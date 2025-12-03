@@ -42,7 +42,19 @@ console.log("Il primo insegnante aggiunto è: " + teachers[0]);
 // 7. Trova l'indice dell'insegnante 'Lewis' nell'array teachers
 // e salvalo nella variabile lewisIndex
 const lewisIndex = teachers.indexOf("Lewis");
-console.log("L'indice di Lewis è: " + lewisIndex);
+console.log(`L'indice di Lewis è: ${lewisIndex}`);
+
+// Alternativa con For - senza usare indexOf
+let lewisIndexAlt = -1;
+for (i=0; i<teachers.length; i++){
+  if (teachers[i] === `Lewis`){
+    lewisIndexAlt = i;
+    i = teachers.length; //end loop
+  }
+}
+
+console.log(`L'indice di Lewis (metodo 2) è: ${lewisIndexAlt}`);
+
 
 // 8. Verifica se l'array teachers è vuoto
 // e salva il risultato nella variabile isTeachersEmpty
