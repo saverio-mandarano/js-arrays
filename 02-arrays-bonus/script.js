@@ -58,10 +58,24 @@ console.log(`Fabio è presente ? : ${isFabioPresent} `);
 
 // 5. Unisci tutti gli insegnanti nell'array teachers in una stringa  separata da virgole
 //e salvala nella variabile teachersString
-let teachersString = `${teachers[0]}`;
+let teachersString = ``;
+let teachersStringAlternative = ``;
 
-for ( i=1; i<teachers.length; i++){
+for ( i=0; i<teachers.length; i++){
+  if (i === 0) {
+    teachersString += `${teachers[i]}`;
+  }
+  else {
     teachersString += `, ${teachers[i]}`;
+  }
+
+  // Alternativa
+
+  teachersStringAlternative += teachers[i] 
+  if (i < teachers.length -1) {
+    teachersStringAlternative += `, `;
+  }
 }
 
 console.log(`Stampo la stringa degli insegnanti: ${teachersString}`);
+console.log(`Stampo la stringa degli insegnanti alternativa: ${teachersStringAlternative}`);
