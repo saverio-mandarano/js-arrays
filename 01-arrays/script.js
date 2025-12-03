@@ -31,6 +31,8 @@ console.log("Il primo insegnante è: " + firstTeacher);
 
 
 // 5. Aggiungi un insegnante di nome 'Vanessa' alla fine dell'array teachers
+teachers.splice(teachers.length, 0, "Vanessa");
+console.log("Ultimo insegnante aggiunto è: " + teachers[teachers.length - 1]);
 
 // 6. Aggiungi un insegnante di nome 'Sarah' all'inizio dell'array teachers
 
