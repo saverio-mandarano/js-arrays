@@ -61,12 +61,34 @@ for ( i=0; i<longNamesAlternative.length; i++){
 
 
 // 3. Rimuovi 'Ed' dall'array teachers
-const indexOfEd = teachers.indexOf(`Ed`)
+// const indexOfEd = teachers.indexOf(`Ed`)
 
 if (indexOfEd !== -1) {      //check - Ed esiste ?    
   console.log(`Indice di Ed: ${indexOfEd}`);
   teachers.splice(indexOfEd, 1); 
   console.log(`Array dopo la rimozione di Ed: `);
+  for (i=0; i<teachers.length; i++){
+    console.log(`indice: ${i}, valore: ${teachers[i]}`);
+  }
+}
+else {
+  console.log(`Ed non trovato nell'array.`);
+}
+
+// Alternativa senza usare indexOf
+let indexOfAlternative = -1;
+
+for (i=0; i<teachers.length; i++){
+  if (teachers[i] === `Ed`){
+    indexOfAlternative = i;
+    i = teachers.length; //end loop
+  }
+}
+
+if (indexOfAlternative !== -1) {      //check - Ed esiste ?    
+  console.log(`Indice di Ed: ${indexOfAlternative}`);
+  teachers.splice(indexOfAlternative, 1); 
+  console.log(`Array dopo la rimozione con metodo2: `);
   for (i=0; i<teachers.length; i++){
     console.log(`indice: ${i}, valore: ${teachers[i]}`);
   }
