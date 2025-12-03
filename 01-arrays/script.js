@@ -30,6 +30,20 @@ console.log("L'ultimo insegnante è: " + lastTeacher);
 const firstTeacher = teachers.splice(0, 1)[0];
 console.log("Il primo insegnante è: " + firstTeacher);
 
+console.log(`array dopo rimozione primo insegnante:`);
+for (i=0; i<teachers.length; i++){
+   console.log(`indice: ${i}, valore: ${teachers[i]}`);
+}
+
+// Alternativa con shift
+const firstTeacher2 = teachers.shift();
+console.log(`Il primo insegnante (metodo 2) è: ${firstTeacher2}`);
+
+console.log(`array dopo ulteriore rimozione primo insegnante:`);
+for (i=0; i<teachers.length; i++){
+   console.log(`indice: ${i}, valore: ${teachers[i]}`);
+}
+
 
 // 5. Aggiungi un insegnante di nome 'Vanessa' alla fine dell'array teachers
 teachers.splice(teachers.length, 0, "Vanessa");
