@@ -12,7 +12,7 @@ let i=0;
 
 // 1. Inverti l'ordine degli insegnanti nell'array teachers
 // e salva il risultato nella variabile reversedTeachers
-const reversedTeachers = teachers.slice().reverse();
+const reversedTeachers = teachers.slice().reverse(); //ATTENZIONE -- slice() -- per non modificare l'array originale
 for ( i=0; i<teachers.length; i++){
   console.log("Array invertito: " + reversedTeachers[i]);
 }
@@ -56,5 +56,12 @@ const isFabioPresent = teachers.indexOf('Fabio') !== -1;
 console.log(`Fabio è presente ? : ${isFabioPresent} `);
 
 
-// 5. Unisci tutti gli insegnanti nell'array teachers in una stringa  separata da virgole e salvala nella variabile teachersString
-const teachersString = null;
+// 5. Unisci tutti gli insegnanti nell'array teachers in una stringa  separata da virgole
+//e salvala nella variabile teachersString
+let teachersString = `${teachers[0]}`;
+
+for ( i=1; i<teachers.length; i++){
+    teachersString += `, ${teachers[i]}`;
+}
+
+console.log(`Stampo la stringa degli insegnanti: ${teachersString}`);
