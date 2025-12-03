@@ -36,19 +36,19 @@ for ( i=0; i<longNames.length; i++){
 
 // 3. Rimuovi 'Ed' dall'array teachers
 const indexOfEd = teachers.indexOf(`Ed`)
-console.log("Indice di Ed: " + indexOfEd);
 
 if (indexOfEd !== -1) {      //check - Ed esiste ?    
+  console.log(`Indice di Ed: ${indexOfEd}`);
   teachers.splice(indexOfEd, 1); 
+  console.log(`Array dopo la rimozione di Ed: `);
+  for (i=0; i<teachers.length; i++){
+    console.log(`indice: ${i}, valore: ${teachers[i]}`);
+  }
 }
 else {
   console.log(`Ed non trovato nell'array.`);
 }
 
-console.log("Array dopo la rimozione di Ed: ");
-for (i=0; i<teachers.length; i++){
-  console.log("Array indice: " + i + " valore: " + teachers[i]);
-}
 
 // 4. Verifica se 'Fabio' è presente nell'array teachers
 // e salva il risultato nella variabile isFabioPresent
