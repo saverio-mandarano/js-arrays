@@ -39,6 +39,11 @@ console.log("Ultimo insegnante aggiunto è: " + teachers[teachers.length - 1]);
 teachers.splice(0, 0, "Sarah");
 console.log("Il primo insegnante aggiunto è: " + teachers[0]);
 
+// Alternativa con unshift
+teachers.unshift(`Sarah-2`);
+console.log(`Insegnante aggiunto all'inizio con metodo2: ${teachers[0]}`)
+
+
 // 7. Trova l'indice dell'insegnante 'Lewis' nell'array teachers
 // e salvalo nella variabile lewisIndex
 const lewisIndex = teachers.indexOf("Lewis");
