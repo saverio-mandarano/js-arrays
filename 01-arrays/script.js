@@ -35,6 +35,8 @@ teachers.splice(teachers.length, 0, "Vanessa");
 console.log("Ultimo insegnante aggiunto è: " + teachers[teachers.length - 1]);
 
 // 6. Aggiungi un insegnante di nome 'Sarah' all'inizio dell'array teachers
+teachers.splice(0, 0, "Sarah");
+console.log("Il primo insegnante aggiunto è: " + teachers[0]);
 
 // 7. Trova l'indice dell'insegnante 'Lewis' nell'array teachers
 // e salvalo nella variabile lewisIndex
