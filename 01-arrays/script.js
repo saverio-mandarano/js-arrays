@@ -8,6 +8,7 @@ const teachers = [
   'Luca'
 ]; // NON MODIFICARE QUESTA VARIABILE
 
+let i = 0;
 
 // 1. Utilizzando un indice sull'array teachers, cambia il valore della 
 // variabile fourthTeacher qui sotto in modo che sia il quarto insegnante elencato nell'array.
@@ -47,3 +48,12 @@ console.log("L'indice di Lewis è: " + lewisIndex);
 // e salva il risultato nella variabile isTeachersEmpty
 const isTeachersEmpty = teachers.length === 0;
 console.log(`L'array è vuoto? ${isTeachersEmpty}`);
+
+// Alternativa con For 
+let contatore = 0;
+for (i=0; i<teachers.length; i++){
+  contatore++;
+}
+const isTeachersEmptyAlternative = contatore === 0;
+console.log(`L'array è vuoto? (metodo alternativo) ${isTeachersEmptyAlternative}`);
+console.log(`La dimensioni dell'array è: ${contatore}`);
