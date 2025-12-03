@@ -12,9 +12,27 @@ let i=0;
 
 // 1. Inverti l'ordine degli insegnanti nell'array teachers
 // e salva il risultato nella variabile reversedTeachers
-const reversedTeachers = teachers.slice().reverse(); //ATTENZIONE -- slice() -- per non modificare l'array originale
+const reversedTeachers = teachers.slice().reverse(); //ATTENZIONE -- slice()
+console.log(`Array invertito con reverse():`);
 for ( i=0; i<teachers.length; i++){
-  console.log("Array invertito: " + reversedTeachers[i]);
+  console.log(`indice: ${i}, valore: ${reversedTeachers[i]}`);
+}
+
+console.log(`Array originale per verifica che slice() abbia funzionato:`);
+for ( i=0; i< teachers.length; i++){
+  console.log(`indice: ${i}, valore:${teachers[i]}`);
+}
+
+// Alternativa senza usare reverse() - sfruttando un ciclo For
+const reversedTeachersAlternative = [];
+
+for ( i=teachers.length - 1; i>=0; i--){
+  reversedTeachersAlternative.push(teachers[i]);
+}
+
+console.log(`Array invertito:`)
+for ( i=0; i < reversedTeachersAlternative.length; i++){
+  console.log(reversedTeachersAlternative[i]);
 }
 
 
