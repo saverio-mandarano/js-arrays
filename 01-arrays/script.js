@@ -34,6 +34,7 @@ for (i=0; i<teachers.length; i++){
    console.log(`indice: ${i}, valore: ${teachers[i]}`);
 }
 
+
 // 3. Rimuovi l'ultimo insegnante dall'array e salvalo nella variabile lastTeacher qui sotto
 const lastTeacher=teachers.splice(teachers.length - 1, 1)[0];
 console.log("L'ultimo insegnante è: " + lastTeacher);
